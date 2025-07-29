@@ -41,5 +41,5 @@ This project is shared under the [MIT License](LICENSE).
 
 ## 👩‍🔬 Author
 
-Lia Coba — PhD candidate in Earth Science | Remote Sensing & Climate Modeling  
+Lia Adroli — PhD candidate in Earth Science | Remote Sensing & Climate Modeling  
 Supervisors: Prof. M. Ellwood, Dr. P. Strutton, Dr. D. Berlianti, Prof. M. Roderick
