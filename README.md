@@ -1,6 +1,6 @@
 # NPSG Phytoplankton Dynamics
 
-This repository provides scripts and processed datasets for investigating long-term trends in phytoplankton biomass (chlorophyll-a), nutrients, and hydrographic profiles in the North Pacific Subtropical Gyre (NPSG). It includes Argo and BGC-Argo float data retrieval, filtering, and merging routines.
+This repository provides scripts and processed datasets for investigating long-term trends in phytoplankton biomass (ocean color chlorophyll), nutrients, and hydrographic profiles in the North Pacific Subtropical Gyre (NPSG) within coordinate 14-28 degree north and 160-200 degree east year 1998-2024. It includes Argo and BGC-Argo float data retrieval, filtering, and merging routines.
 
 ## 📚 Contents
 
@@ -11,7 +11,7 @@ This repository provides scripts and processed datasets for investigating long-t
 
 ## 📁 Datasets
 
-- `data/merged_bgc_filtered2.csv`: Merged and quality-filtered BGC Argo data
+- `data/merged_bgc_filtered2.csv`: Merged and quality-filtered BGC Argo data (CHLA_ADJUSTED QC = 1 or 2) 
 - `data/ArgoFloats_filtered_qc12_pres1000.csv`: Core Argo temperature/salinity profiles (QC = 1 or 2)
 
 ## 🔧 Requirements
@@ -41,5 +41,5 @@ This project is shared under the [MIT License](LICENSE).
 
 ## 👩‍🔬 Author
 
-Lia Adroli — PhD candidate in Earth Science | Remote Sensing & Climate Modeling  
+Lia Adroli — PhD candidate in Earth Science | Remote Sensing & Climate Modeling | Research School of Earth Science | the Australian National University
 Supervisors: Prof. M. Ellwood, Dr. P. Strutton, Dr. D. Berlianti, Prof. M. Roderick
