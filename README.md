@@ -37,11 +37,11 @@ This repository contains code, data, and documentation for analyzing long-term p
 
 ## Key Datasets (`/data`)
 
-daily_mean.csv — Daily merged surface variables (CHL, SSTa, AOD, SLA, etc.)
-ArgoFloats_filtered_qc12_pres1000.csv — Core‑Argo profiles 0–1000 m
-merged_bgc_filtered2.csv — QC1‑2 BGC‑Argo profiles (CHLA, NO₃⁻, DOXY)
-ersst_v6_ssta.nc — NOAA ERSST v6 SST anomalies (1998–2024)
-climate_chla_monthly.csv — Monthly Chl‑a anomalies + ENSO/PDO indices
+- `daily_mean.csv` — Daily merged surface variables (CHL, SSTa, AOD, SLA, etc.)
+- `ArgoFloats_filtered_qc12_pres1000.csv` — QC1‑2 Core‑Argo profiles 0–1000 m
+- `merged_bgc_filtered2.csv` — QC1‑2 BGC‑Argo profiles (CHLA, NO₃⁻, DOXY)
+- `ersst_v6_ssta.nc` — NOAA ERSST v6 SST anomalies (1998–2024)
+- `climate_chla_monthly.csv` — Monthly Chl‑a anomalies + ENSO/PDO indices
 
 ---
 
