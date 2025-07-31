@@ -41,5 +41,5 @@ This project is shared under the [MIT License](LICENSE).
 
 ## 👩‍🔬 Author
 
-Lia Adroli — PhD candidate in Earth Science | Remote Sensing & Climate Modeling | Research School of Earth Science | the Australian National University
-Supervisors: Prof. M. Ellwood, Dr. P. Strutton, Dr. D. Berlianti, Prof. M. Roderick
+Lia Adroli — PhD candidate in Earth Science | Remote Sensing of Ocean Biogeochemistry | Research School of Earth Sciences | the Australian National University
+
