@@ -12,7 +12,7 @@ This repository contains code, data, and documentation for analyzing long-term p
 - `merge_bgc_csvs.py` — Merge cleaned BGC float CSVs into a master dataset
 - `filter_core_argo.py` — Extract 0–1000 dbar profiles from core Argo float data
 
-### 🔹 MATLAB Analysis (`/matlab`)
+### 🔹 MATLAB Analysis (`/Matlab`)
 - `npsg_all_analysis.m` — Unified script with:
   1. Mixed Layer Depth (MLD) estimation
   2. Trend analysis with ±3σ outlier filtering (DOY-wise)
