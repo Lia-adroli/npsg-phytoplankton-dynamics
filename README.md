@@ -66,7 +66,7 @@ pip install argopy pandas xarray matplotlib
 ### MATLAB (analysis + figures)
 Toolboxes:
 - Signal Processing Toolbox (`cwt`, `wcoherence`)
-- Statistics Toolbox (`fitlm`, `granger_cause`)
+- Statistics Toolbox (`fitlm`, 'corr', `granger_cause`)
 - Optional: `wavelet.m`, `cross_wavelet.m` for classic implementations
 
 
