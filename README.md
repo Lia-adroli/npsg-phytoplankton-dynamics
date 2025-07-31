@@ -115,6 +115,7 @@ run fig3_vertical_profiles
 ---
 
 ## 🌍 Data Sources
+See [`docs/dataset_sources.md`](docs/dataset_sources.md) for full dataset list.
 - **BGC-Argo:** https://biogeochemical-argo.org
 - **Core Argo:** https://argo.ucsd.edu
 - **ESA OC-CCI:** https://esa-oceancolour-cci.org
