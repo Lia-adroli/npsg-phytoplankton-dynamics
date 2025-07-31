@@ -24,9 +24,16 @@ This repository contains code, data, and documentation for analyzing long-term p
   8. BGC-Argo vertical trends (CHLA, NO₃⁻, DOXY)
 
 ### Reproducible Figures (`/figures`)
-- `fig3_vertical_profiles.m` — Plot vertical change in CHLA, nitrate, and oxygen between early and recent years
 
----
+| Filename                             | Description                                                                                     |
+|--------------------------------------|-------------------------------------------------------------------------------------------------|
+| `fig1_surface_trend_profile_freq.m`  | Surface chlorophyll-a trend map (1998–2024) and Argo float profile density (Fig 1a/1b) |
+| `fig2_chl_wavelet.m`                 | Continuous wavelet transform (CWT) and monthly time series of surface Chl-a anomaly (Fig 2a/2b) |
+| `fig3_trend_crosscor_granger.m`      | Long-term drivers of chlorophyll variability: regression, lag, and coherence (Fig 3a–d) |
+| `fig4_heat_climate.m`                | Spatial/temporal SSTa and climate patterns; cross-wavelet with Chl-a (Fig 4a–b) |
+| `fig5_climate_wavelet_spatial.m`     | SSTa trends, warming expansion, SSTa-Chl relationships (Fig 5a–c) |
+| `fig6_ohc_dcm_shift_bgc.m`           | Seasonal/vertical trends in SSTa, OHC, and chlorophyll + interpretation (Fig 6a/6b) |
+| `fig7_bgc_hovmoller_profiles.m`      | Seasonal Hovmöller plots of CHLA, NO₃⁻, and DOXY (2016/2020 vs 2024) (Fig 7a–c) |
 
 ## Key Datasets (`/data`)
 
@@ -103,15 +110,6 @@ run_crosswavelet_analysis('data/climate_chla_monthly.csv');
 run_ssta_ohc_analysis('data/ssta.nc', 'data/ohc.nc');
 run_bgc_argo_depth_change('data/merged_bgc_filtered2.csv');
 ```
-
----
-
-## Reproducing Figures
-```matlab
-cd figures
-run fig3_vertical_profiles
-```
-
 ---
 
 ## 🌍 Data Sources
@@ -119,7 +117,7 @@ See [`docs/dataset_sources.md`](docs/dataset_sources.md) for full dataset list.
 - **BGC-Argo:** https://biogeochemical-argo.org
 - **Core Argo:** https://argo.ucsd.edu
 - **ESA OC-CCI:** https://esa-oceancolour-cci.org
-- **CMEMS (SLA, OHC):** https://marine.copernicus.eu
+- **CMEMS (SLA, currents):** https://marine.copernicus.eu and https://duacs.cls.fr/ 
 - **MERRA-2 AOD:** https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/
 - **NOAA ERSST v6:** https://www.ncei.noaa.gov/products/climate-data-records/extended-reconstructed-sst
 
