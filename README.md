@@ -1,10 +1,10 @@
-# 🌊 NPSG Phytoplankton Dynamics
+# NPSG Phytoplankton Dynamics
 
 This repository contains code, data, and documentation for analyzing long-term physical and biogeochemical changes in the **North Pacific Subtropical Gyre (NPSG)**. The study focuses on the region between **14–28°N and 160–200°E** during **1998–2024**, integrating satellite observations, core Argo, and BGC-Argo profiles.
 
 ---
 
-## 📚 Repository Contents
+## Repository Contents
 
 ### 🔹 Python Scripts (`/scripts`)
 - `fetch_bgc_floats.py` — Download BGC-Argo profiles using WMO numbers
@@ -23,12 +23,12 @@ This repository contains code, data, and documentation for analyzing long-term p
   7. SSTa warming expansion & OHC trends (gridded, Core-Argo derived)
   8. BGC-Argo vertical trends (CHLA, NO₃⁻, DOXY)
 
-### 🐹 Reproducible Figures (`/figures`)
+### Reproducible Figures (`/figures`)
 - `fig3_vertical_profiles.m` — Plot vertical change in CHLA, nitrate, and oxygen between early and recent years
 
 ---
 
-## 📁 Key Datasets (`/data`)
+## Key Datasets (`/data`)
 
 - `merged_bgc_filtered2.csv` — QC 1–2 BGC-Argo profiles for CHLA, NITRATE, DOXY
 - `ArgoFloats_filtered_qc12_pres1000.csv` — Core-Argo profiles (TEMP & PSAL, 0–1000 m)
@@ -56,14 +56,14 @@ This repository contains code, data, and documentation for analyzing long-term p
 
 ---
 
-## 🔧 Installation & Requirements
+## Installation & Requirements
 
-### 🐍 Python (data preparation)
+### Python (data preparation)
 ```bash
 pip install argopy pandas xarray matplotlib
 ```
 
-### 🧲 MATLAB (analysis + figures)
+### MATLAB (analysis + figures)
 Toolboxes:
 - Signal Processing Toolbox (`cwt`, `wcoherence`)
 - Statistics Toolbox (`fitlm`, `granger_cause`)
@@ -83,7 +83,7 @@ MATLAB functionality includes:
 
 ---
 
-## 🧪 Example Python Usage
+## Example Python Usage
 ```python
 from argopy import DataFetcher
 ds = DataFetcher(ds='bgc').float(5906502).to_xarray()
@@ -92,7 +92,7 @@ print(ds.chla.mean(dim='N_LEVELS'))
 
 ---
 
-## 📈 Running MATLAB Analyses
+## Running MATLAB Analyses
 ```matlab
 run_mld_analysis('data/ArgoFloats_filtered_qc12_pres1000.csv');
 run_trend_analysis('data/daily_mean.csv');
@@ -106,7 +106,7 @@ run_bgc_argo_depth_change('data/merged_bgc_filtered2.csv');
 
 ---
 
-## 🗈️ Reproducing Figures
+## Reproducing Figures
 ```matlab
 cd figures
 run fig3_vertical_profiles
@@ -129,7 +129,7 @@ MIT License — see [LICENSE](LICENSE) file.
 
 ---
 
-## 👩‍🔬 Author
+## Author
 **Lia Adroli**  
 PhD Candidate, Earth Science  
 Remote Sensing of Ocean Biogeochemistry  
