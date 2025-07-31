@@ -37,10 +37,11 @@ This repository contains code, data, and documentation for analyzing long-term p
 
 ## Key Datasets (`/data`)
 
-- `merged_bgc_filtered2.csv` — QC 1–2 BGC-Argo profiles for CHLA, NITRATE, DOXY
-- `ArgoFloats_filtered_qc12_pres1000.csv` — Core-Argo profiles (TEMP & PSAL, 0–1000 m)
-- `daily_mean.csv` — Time series of merged satellite + in situ variables (CHL, SSTa, AOD, SLA)
-- `ssta.nc` / `ohc.nc` — Gridded SSTa and Ocean Heat Content for spatial warming trends
+daily_mean.csv — Daily merged surface variables (CHL, SSTa, AOD, SLA, etc.)
+ArgoFloats_filtered_qc12_pres1000.csv — Core‑Argo profiles 0–1000 m
+merged_bgc_filtered2.csv — QC1‑2 BGC‑Argo profiles (CHLA, NO₃⁻, DOXY)
+ersst_v6_ssta.nc — NOAA ERSST v6 SST anomalies (1998–2024)
+climate_chla_monthly.csv — Monthly Chl‑a anomalies + ENSO/PDO indices
 
 ---
 
@@ -107,7 +108,7 @@ run_crosscorr_analysis('data/daily_mean.csv');
 run_granger_test('data/daily_mean.csv');
 run_wavelet_analysis('data/daily_mean.csv');
 run_crosswavelet_analysis('data/climate_chla_monthly.csv');
-run_ssta_ohc_analysis('data/ssta.nc', 'data/ohc.nc');
+run_ssta_analysis('data/ssta.nc', 'data/ohc.nc');
 run_bgc_argo_depth_change('data/merged_bgc_filtered2.csv');
 ```
 ---
