@@ -9,8 +9,8 @@
 %     2. Trend Analysis (3σ outlier filter)
 %     3. Cross-Correlation
 %     4. Granger Causality
-%     5. Wavelet Power of Chl-a
-%     6. Cross-Wavelet Coherence (Chl-a vs PDO & ENSO)
+%     5. Wavelet Power of Chl
+%     6. Cross-Wavelet Coherence (Chl anomaly z score vs PDO & ENSO)
 %     7a. OHC Depth×Month Trend (GJ/m²/yr)
 %     7b. SSTa Warming Expansion Area (km²)
 %     8. BGC-Argo Depth-Stratified Trends & Hovmöller matrices
