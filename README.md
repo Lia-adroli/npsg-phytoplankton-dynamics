@@ -23,18 +23,6 @@ This repository contains code, data, and documentation for analyzing long-term p
   7. SSTa warming expansion & OHC trends (gridded, Core-Argo derived)
   8. BGC-Argo vertical trends (CHLA, NO₃⁻, DOXY)
 
-### Reproducible Figures (`/figures`)
-
-| Filename                             | Description                                                                                     |
-|--------------------------------------|-------------------------------------------------------------------------------------------------|
-| `fig1_surface_trend_profile_freq.m`  | Surface chlorophyll-a trend map (1998–2024) and Argo float profile density (Fig 1a/1b) |
-| `fig2_chl_wavelet.m`                 | Continuous wavelet transform (CWT) and monthly time series of surface Chl-a anomaly (Fig 2a/2b) |
-| `fig3_trend_crosscor_granger.m`      | Long-term drivers of chlorophyll variability: regression, lag, and coherence (Fig 3a–d) |
-| `fig4_heat_climate.m`                | Spatial/temporal SSTa and climate patterns; cross-wavelet with Chl-a (Fig 4a–b) |
-| `fig5_climate_wavelet_spatial.m`     | SSTa trends, warming expansion, SSTa-Chl relationships (Fig 5a–c) |
-| `fig6_ohc_dcm_shift_bgc.m`           | Seasonal/vertical trends in SSTa, OHC, and chlorophyll + interpretation (Fig 6a/6b) |
-| `fig7_bgc_hovmoller_profiles.m`      | Seasonal Hovmöller plots of CHLA, NO₃⁻, and DOXY (2016/2020 vs 2024) (Fig 7a–c) |
-
 ## Key Datasets (`/data`)
 
 - `daily_mean.csv` — Daily merged surface variables (CHL, SSTa, AOD, SLA, etc.)
