@@ -1,15 +1,48 @@
+# =======================================
 # Python
+# =======================================
 __pycache__/
 *.py[cod]
-*.ipynb_checkpoints
+*.pyo
+*.ipynb_checkpoints/
 
-# Data
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# =======================================
+# MATLAB
+# =======================================
+*.asv          # Auto-save files
+*.mex*         # Compiled MEX files
+*.mdl.autosave
+*.slxc
+slprj/
+codegen/
+
+# =======================================
+# Data & Output (not tracked)
+# =======================================
+data/
+output/
+figures/
 *.h5
 *.nc
 *.mat
+*.csv
 *.log
 *.tmp
+*.bak
 
-# OS
+# =======================================
+# OS & Editor Junk
+# =======================================
 .DS_Store
 Thumbs.db
+Icon?
+ehthumbs.db
+*.swp
+*.swo
+*~
