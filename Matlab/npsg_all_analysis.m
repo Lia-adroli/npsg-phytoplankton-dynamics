@@ -17,7 +17,7 @@
 %
 % Input files:
 %   1. ArgoFloats_filtered_qc12_pres1000.csv (scripts/filter_core_argo.py)
-%   2. daily_mean.csv
+%   2. daily_mean_roi.csv
 %   3. merged_bgc_filtered2.csv (scripts/merge_bgc_csvs.py)
 %   4. ersst.v5.YYYYMM.nc (monthly, 1998–2024) (docs/dataset_sources.md)
 %
