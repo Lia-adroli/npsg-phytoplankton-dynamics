@@ -124,3 +124,4 @@ PhD Candidate, Earth Science
 Remote Sensing of Ocean Biogeochemistry  
 [Research School of Earth Sciences](https://earthsciences.anu.edu.au)  
 The Australian National University
+https://orcid.org/0009-0000-2982-1900
