@@ -105,10 +105,11 @@ print(ds.chla.mean(dim='N_LEVELS'))
 run_mld_analysis('data/ArgoFloats_filtered_qc12_pres1000.csv');
 run_trend_analysis('data/daily_mean.csv');
 run_crosscorr_analysis('data/daily_mean.csv');
-run_granger_test('data/daily_mean.csv');
+run_full_granger_analysis('data/daily_mean.csv');
 run_wavelet_analysis('data/daily_mean.csv');
 run_crosswavelet_analysis('data/climate_chla_monthly.csv');
-run_ssta_analysis('data/ssta.nc', 'data/ohc.nc');
+run_ssta_analysis('data/ersst_v6_ssta.nc');
+run_ohc_analysis('data/ArgoFloats_filtered_qc12_pres1000.csv');
 run_bgc_argo_depth_change('data/merged_bgc_filtered2.csv');
 ```
 ---
