@@ -9,7 +9,7 @@ This document lists the datasets used in our study, grouped by surface and depth
 | No | Variable | Source | Type | Resolution | Temporal Coverage | Link |
 |----|----------|--------|------|------------|--------------------|------|
 | 1.1 | Surface chlorophyll, PSC (Micro, Nano, Pico) | ESA-CCI L3 (SeaWiFS, MODIS, MERIS, VIIRS, OLCI) | Satellite L-3 | 4 × 4 km | Daily (1998–2024) | [ESA CCI Chlorophyll](https://www.oceancolour.org/thredds/ncss/grid/CCI_ALL-v6.0-1km-DAILY/dataset.html) |
-| 1.2 | Euphotic depth (Zeu) & Kd490 | Copernicus Ocean Colour | Satellite L-4 | 4 × 4 km | Daily (1998–2023) | [Zeu - Copernicus](https://data.marine.copernicus.eu/product/OCEANCOLOUR_GLO_BGC_L4_NRT_009_102) |
+| 1.2 | Euphotic depth (Zeu) & Kd490 | Copernicus Ocean Colour | Satellite L-4 | 4 × 4 km | Daily (1998–2024) | [Zeu - Copernicus](https://data.marine.copernicus.eu/product/OCEANCOLOUR_GLO_BGC_L4_NRT_009_102) |
 | 1.3 | AOD (500–555 nm) | MERRA-2, SeaWiFS, MODIS, MISR, OMI | Satellite L-3 | 0.5°–1° | Daily/hourly (1998–2024) | [MERRA Giovanni](https://giovanni.gsfc.nasa.gov/) |
 | 1.9 | Sea Level Anomaly (SLA) | DUACS Multi-Mission | Satellite L-4 | 0.125° | Daily (1998–2023) | [DUACS SLA](https://duacs.cls.fr/) |
 | 1.10 | Surface geostrophic currents (ugos, vgos) | DUACS Multi-Mission | Satellite L-4 | 0.125° | Daily (1998–2023) | [DUACS Currents](https://duacs.cls.fr/) |
