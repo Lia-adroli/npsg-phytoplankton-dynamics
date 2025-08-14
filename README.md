@@ -8,7 +8,7 @@ This repository contains code, data, and documentation for analyzing long-term p
 
 ### 🔹 Python Scripts (`/scripts`)
 - `fetch_bgc_floats.py` — Download BGC-Argo profiles using WMO numbers
-- `filter_bgc_data.py` — Filter CHLA, DOXY, NITRATE from BGC-Argo profiles (QC 1–2)
+- `filter_bgc_data.py` — Filter CHLA, DOXY, NITRATE, and BBP700 from BGC-Argo profiles (QC 1–2)
 - `merge_bgc_csvs.py` — Merge cleaned BGC float CSVs into a master dataset
 - `filter_core_argo.py` — Extract 0–1000 dbar profiles from core Argo float data
 
@@ -27,7 +27,7 @@ This repository contains code, data, and documentation for analyzing long-term p
 
 - `daily_mean_roi.csv` — Daily merged surface variables (CHL, SSTa, AOD, SLA, etc.)
 - `ArgoFloats_filtered_qc12_pres1000.csv` — QC1‑2 Core‑Argo profiles 0–1000 m
-- `merged_bgc_filtered2.csv` — QC1‑2 BGC‑Argo profiles (CHLA, NO₃⁻, DOXY)
+- `merged_bgc_filtered2.csv` — QC1‑2 BGC‑Argo profiles (CHLA, NO₃⁻, DOXY, BBP700)
 - `ersst_v6_ssta.nc` — NOAA ERSST v6 SST anomalies (1998–2024)
 - `climate_chla_monthly.csv` — Monthly Chl‑a anomalies + ENSO/PDO indices
 
