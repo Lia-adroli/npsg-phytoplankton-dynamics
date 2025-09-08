@@ -22,6 +22,12 @@ This repository contains code, data, and documentation for analyzing long-term p
   6. Cross-wavelet coherence with ENSO and PDO
   7. SSTa warming expansion & OHC trends (gridded, Core-Argo derived)
   8. BGC-Argo vertical trends (CHLA, NO₃⁻, DOXY)
+- `npsg_cbpm_export_pipeline.m` — that computes:
+  1. CbPM NPP (depth-binned, mol C m⁻³ d⁻¹)
+  2. AOU → AOUc conversion (Garcia & Gordon 1992; O₂:C = 170:117)
+  3. Export proxy from below-Zeu AOUc tendencies
+  4. Particle Export Efficiency (PEE, %) for 2020 & 2024
+  5. Isopycnal re-binning (σ₀, EOS-80) + lagged Spearman correlations
 
 ## Key Datasets (`/data`)
 
@@ -30,6 +36,8 @@ This repository contains code, data, and documentation for analyzing long-term p
 - `merged_bgc_filtered2.csv` — QC1‑2 BGC‑Argo profiles (CHLA, NO₃⁻, DOXY, BBP700)
 - `ersst_v6_ssta.nc` — NOAA ERSST v6 SST anomalies (1998–2024)
 - `climate_chla_monthly.csv` — Monthly Chl‑a anomalies + ENSO/PDO indices
+- `monthly_Kd490_Zeu_ZSD.csv` — Monthly Kd490, Zeu, PAR_surf
+- `monthly_mld_temperature_only_argo1_2003.csv` — Monthly MLD_TempOnly
 
 ---
 
@@ -49,7 +57,7 @@ This repository contains code, data, and documentation for analyzing long-term p
 - SSTa anomaly threshold: +1°C to identify warming extent
 - SSTa/OHC trends: OLS regression on 1° grids; smoothed with 3-point moving avg
 - Z-score anomalies used in Granger/wavelet; cross-correlation used ±3σ-filtered monthly anomalies
-
+- Export: AOUc tendencies below Zeu; PEE = 100 × mean(export)/mean(NPP)
 ---
 
 ## Installation & Requirements
@@ -64,7 +72,8 @@ Toolboxes:
 - Signal Processing Toolbox (`cwt`, `wcoherence`)
 - Statistics Toolbox (`fitlm`, `corr`, `granger_cause`)
 - Optional: `wavelet.m`, `cross_wavelet.m` for classic implementations
-
+- Optional: GSW or SEAWATER toolbox for accurate σ₀/density
+- If missing, script falls back to polynomial EOS-80 approximations
 
 MATLAB functionality includes:
 - MLD calculation from sigma-T structure
@@ -76,7 +85,7 @@ MATLAB functionality includes:
 - SSTa warming analysis from ERSST v6
 - Ocean Heat Content from Core Argo
 - BGC-Argo vertical trends in CHLA, NO₃⁻, DOXY (2016/2020 vs 2024)
-
+- CbPM + export efficiency 
 ---
 
 ## Example Python Usage
@@ -99,6 +108,7 @@ run_crosswavelet_analysis('data/climate_chla_monthly.csv');
 run_ssta_analysis('data/ersst_v6_ssta.nc');
 run_ohc_analysis('data/ArgoFloats_filtered_qc12_pres1000.csv');
 run_bgc_argo_depth_change('data/merged_bgc_filtered2.csv');
+R = npsg_cbpm_export_pipeline('data', struct('save_csv', true));
 ```
 ---
 
