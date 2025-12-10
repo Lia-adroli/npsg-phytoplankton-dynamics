@@ -129,7 +129,7 @@ MIT License — see [LICENSE](LICENSE) file.
 ---
 
 ## Author
-**Lia Adroli**  
+Nurmalia (Lia) Adroli  
 PhD Candidate, Earth Science  
 Remote Sensing of Ocean Biogeochemistry  
 [Research School of Earth Sciences](https://earthsciences.anu.edu.au)  
